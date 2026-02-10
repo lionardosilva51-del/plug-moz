@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f2f6fc;
+    color: #333;
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+}
+
+
+header {
+    background: linear-gradient(135deg, #32cf81, #3ae2b8);
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.1em;
+    opacity: 0.9;
+}
+
+
+nav {
+    background-color: #1e3799;
+    display: flex;
+    justify-content: center;
+    padding: 12px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+
+main {
+    padding: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+main h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #1e3799;
+}
+
+/* ===== PRODUTOS ===== */
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.produto {
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.produto:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+}
+
+.produto h3 {
+    color: #0a3d62;
+    margin-bottom: 10px;
+}
+
+.produto p {
+    font-size: 0.95em;
+    margin-bottom: 10px;
+}
+
+.produto span {
+    font-weight: bold;
+    color: #27ae60;
+}
+
+/* ===== BOTÃO ===== */
+.produto button {
+    margin-top: 15px;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #1e3799;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.produto button:hover {
+    background-color: #0a3d62;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    margin-top: 40px;
+    background-color: #0a3d62;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9em;
+}
+
+* ===== RESPONSIVO ===== *//
+@media (max-width: 600px) 
+    header h1 {
+        font-size: 2em;
+    }
+     
+    
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        margin: 8px 0;
+    }
